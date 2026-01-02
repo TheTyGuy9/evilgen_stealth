@@ -457,7 +457,7 @@ EvilGen represents the cutting edge of defensive security research. By understan
 
 ---
 
-**Last Updated**: December 2024  
+**Last Updated**: Jan 2026  
 **Version**: 1.0.0  
 **Author**: Conscience Ekhomwandolor  
 **Status**: Active Development  
