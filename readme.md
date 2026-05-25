@@ -39,45 +39,6 @@ EvilGen is an advanced, universal phishlet generator that automates the analysis
 
 ---
 
-## ⚠️ Critical Ethical Warning
-
-### **STRICT USAGE BOUNDARIES:**
-
-```text
-████████████████████████████████████████████████████████████████████████████████
-█                                                                              █
-█  EVILGEN IS A DUAL-USE TOOL                                                  █
-█                                                                              █
-█  APPROVED USES:                                                              █
-█  ✓ Authorized penetration testing with written consent                       █
-█  ✓ Security research in isolated lab environments                            █
-█  ✓ Defensive security training and education                                 █
-█  ✓ Developing detection and prevention mechanisms                            █
-█                                                                              █
-█  PROHIBITED USES:                                                            █
-█  ✗ Unauthorized testing of any system                                        █
-█  ✗ Real-world phishing attacks                                               █
-█  ✗ Testing systems you don't own or control                                  █
-█  ✗ Bypassing organizational security policies                                █
-█                                                                              █
-█  LEGAL REQUIREMENTS:                                                         █
-█  • Written authorization for ALL targets                                     █
-█  • Isolated, controlled lab environments only                                █
-█  • Ownership of ALL test accounts and systems                                █
-█  • Compliance with local, national, and international laws                   █
-█  • Full documentation and audit trails                                       █
-█                                                                              █
-████████████████████████████████████████████████████████████████████████████████
-```
-
-**By using EvilGen, you agree to:**
-1. Use it only for authorized security testing
-2. Never target systems without explicit written permission
-3. Maintain comprehensive audit logs
-4. Report any discovered vulnerabilities responsibly
-5. Use knowledge gained to improve security defenses
-
----
 
 ## Features
 
@@ -103,6 +64,7 @@ EvilGen is an advanced, universal phishlet generator that automates the analysis
 - **Detection Rules**: Suricata/Snort rules to detect the attack
 - **Summary Reports**: Detailed analysis of discovered vulnerabilities
 - **Ethical Guidelines**: Built-in reminders and compliance documentation
+- **Now All Updated And Stealthed By Using Selinium Stealth With CDT
 
 ---
 
@@ -121,8 +83,8 @@ EvilGen is an advanced, universal phishlet generator that automates the analysis
 ### Quick Install (Recommended)
 ```bash
 # Clone the repository
-git clone https://github.com/razielapps/evilgen.git
-cd evilgen
+git clone https://github.com/TheTyGuy9/evilgen_stealth
+cd evilgen_stealth
 
 # Run the installer
 chmod +x install_evilgen.sh
@@ -145,13 +107,18 @@ pip3 install selenium browsermob-proxy pyyaml colorama requests
 ./scripts/install_browsermob.sh
 
 # 5. Make scripts executable
-chmod +x evilgen.py test_phishlet.py
+chmod +x stealth.py test_phishlet.py
+
+# 6. From your virtual environment, is using..
+pip install selenium-stealth
 ```
+DO NOT RUN AS ROOT! 
+YOU WILL HAVE ISSUES
 
 ### Verification
 ```bash
 # Test installation
-python3 evilgen.py --test
+python3 stealth.py --test
 
 # Check dependencies
 python3 scripts/check_dependencies.py
@@ -175,10 +142,10 @@ Follow the interactive prompts:
 ### Command Line Mode
 ```bash
 # Basic usage
-python3 evilgen.py --url https://lab-target.com/login --version 2 --output target_phishlet.yaml
+python3 stealth.py --url https://lab-target.com/login --version 2 --output target_phishlet.yaml
 
 # Advanced options
-python3 evilgen.py \
+python3 stealth.py \
   --url https://target.com/auth \
   --version 3 \
   --depth advanced \
